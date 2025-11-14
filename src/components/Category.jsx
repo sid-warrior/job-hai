@@ -45,16 +45,16 @@ const Category = () => {
             >
               <Button onClick={()=>searchJobHandler(item)} 
                 variant="outline" 
-                className="w-full rounded-full h-12 border-2 hover:border-[#57C785] hover:text-[#57C785] transition-all duration-300 group"
+                className="w-18 rounded-full h-10 border-1 hover:border-[#4E992E] hover:text-[#4E992E] transition-all duration-300 group"
               >
-                <Briefcase className="w-4 h-4 mr-2 opacity-50 group-hover:opacity-100 transition-opacity" />
+               
                 {item}
               </Button>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden md:flex -left-12 border-2 hover:bg-[#6A38C2] hover:text-white transition-all duration-300" />
-        <CarouselNext className="hidden md:flex -right-12 border-2 hover:bg-[#6A38C2] hover:text-white transition-all duration-300" />
+        <CarouselPrevious className="hidden md:flex -left-12 border-2 hover:bg-[#4E992E] hover:text-white transition-all duration-300" />
+        <CarouselNext className="hidden md:flex -right-12 border-2 hover:bg-[#4E992E] hover:text-white transition-all duration-300" />
       </Carousel>
 
       <div className="mt-8 text-center">

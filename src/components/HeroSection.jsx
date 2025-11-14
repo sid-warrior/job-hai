@@ -57,7 +57,7 @@ const HeroSection = () => {
               placeholder="Find local jobs with better salary!"
               className="outline-none px-4 py-4 w-full border-none text-lg placeholder:text-gray-400"
             />
-            <Button onClick={searchJobHandler} className="bg-[#4E992E] hover:bg-[#5b30a6] rounded-r-full h-14 px-8 transition-all duration-300">
+            <Button onClick={searchJobHandler} className="bg-[#4E992E] hover:bg-[#fffff] rounded-r-full h-14 px-8 transition-all duration-300">
               <Search className="h-5 w-5 mr-2" />
               Search
             </Button>
@@ -67,20 +67,20 @@ const HeroSection = () => {
         {/* Stats */}
         <div className="flex gap-8 mt-8 animate-fade-in-up animation-delay-450">
           <div className="flex items-center gap-2">
-            <TrendingUp className="h-5 w-5 text-[#6A38C2]" />
-            <span className="text-lg">
+            <TrendingUp className="h-5 w-5 text-[#4E992E]" />
+            <span className="text-2xl">
               <strong className="font-bold">10k+</strong> Jobs Posted
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <Star className="h-5 w-5 text-[#F83002]" />
-            <span className="text-lg">
+            <Star className="h-5 w-5 text-[#3F6E2C]" />
+            <span className="text-2xl">
               <strong className="font-bold">8k+</strong> Companies
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <Briefcase className="h-5 w-5 text-[#6A38C2]" />
-            <span className="text-lg">
+            <Briefcase className="h-5 w-5 text-[#4E992E]" />
+            <span className="text-2xl">
               <strong className="font-bold">15k+</strong> Candidates
             </span>
           </div>

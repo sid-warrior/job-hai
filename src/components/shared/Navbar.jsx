@@ -34,7 +34,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b shadow-sm">
+    <div className="bg-white/30 backdrop-blur-md sticky top-0 z-50 border-b shadow-sm">
       <div className="flex items-center justify-between mx-auto max-w-7xl h-[4.5rem] px-4 sm:px-6 lg:px-8">
         <div className="relative group">
           <Link to="/">
@@ -45,7 +45,7 @@ const Navbar = () => {
               </span>
             </h1>
           </Link>
-          <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#f83002] to-[#ff6b4d] transition-all duration-300 group-hover:w-full"></div>
+          <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#f83002] to-[#ff6b4d] transition-all duration-300 "></div>
         </div>
 
         {/* Desktop Navigation */}
@@ -75,9 +75,9 @@ const Navbar = () => {
                 <Link to="/">
                   <li className="relative group">
                     <span className="cursor-pointer transition-colors">
-                      Home
+                      Download App
                     </span>
-                    <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#f83002] transition-all duration-300 group-hover:w-full"></div>
+                    <h2 className="text-green-600 absolute -bottom-1 left-0 w-0 h-[4px] bg-[#4E992E] transition-all duration-300 "></h2>
                   </li>
                 </Link>
                 <Link to="/jobs">
@@ -85,7 +85,7 @@ const Navbar = () => {
                     <span className="cursor-pointer transition-colors">
                       Jobs
                     </span>
-                    <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#f83002] transition-all duration-300 group-hover:w-full"></div>
+                    <div className="text-2xl absolute -bottom-1 left-0 w-0 h-[2px] bg-[#f83002] transition-all duration-300"></div>
                   </li>
                 </Link>
                 <Link to="/browse">
@@ -93,7 +93,7 @@ const Navbar = () => {
                     <span className="cursor-pointer transition-colors">
                       Browse
                     </span>
-                    <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#f83002] transition-all duration-300 group-hover:w-full"></div>
+                    <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#f83002] transition-all duration-300 "></div>
                   </li>
                 </Link>
               </>
@@ -110,9 +110,9 @@ const Navbar = () => {
                 </Button>
               </Link>
               <Link to="/signup">
-                <Button className="bg-gradient-to-r from-[#6A38C2] to-[#7c52cc] hover:opacity-90 font-medium transition-all duration-300">
-                  Sign Up
-                </Button>
+              <Button className="border-2 relative h-10  rounded bg-gray-50 px-5 py-2.5 text-black-400 transition-all duration-300 hover:bg-[#4E992E] hover:ring-1 hover:ring-neutral-800 hover:ring-offset-2"><span class="relative">Sign up</span></Button>
+                
+               
               </Link>
             </div>
           ) : (
@@ -235,7 +235,7 @@ const Navbar = () => {
                       </Link>
                       <Link to="/signup" className="flex-1">
                         <Button
-                          className="w-full bg-gradient-to-r from-[#6A38C2] to-[#7c52cc] hover:opacity-90 font-medium"
+                          className="w-full bg-gradient-to-r from-[#22E071] to-[#22E071] hover:opacity-90 font-medium"
                           onClick={() => setIsOpen(false)}
                         >
                           Sign Up

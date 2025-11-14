@@ -200,7 +200,7 @@ const Signup = () => {
           ) : (
             <Button
               type="submit"
-              className="w-full mt-8 h-11 bg-[#6A38C2] hover:bg-[#5b30a6] text-white font-medium rounded-lg transition-colors duration-200"
+              className="w-full mt-8 h-11 bg-[#4E992E] hover:bg-[#91D47B] text-white font-medium rounded-lg transition-colors duration-200"
             >
               Create Account
             </Button>
@@ -210,7 +210,7 @@ const Signup = () => {
             Already have an account?{" "}
             <Link
               to="/login"
-              className="text-blue-600 hover:text-blue-700 font-medium"
+              className="text-green-600 hover:text-green-700 font-medium"
             >
               Sign in
             </Link>

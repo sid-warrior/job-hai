@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone, Briefcase } from 'lucide-react';
+import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone, Briefcase, Youtube } from 'lucide-react';
 import { Button } from '../ui/button';
 
 
@@ -24,22 +24,22 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white border-t border-gray-200">
+    <footer className="bg-green border-t border-green-200">
       {/* Newsletter Section */}
-      <div className="border-b border-gray-200">
+      <div className="border-b border-green-200">
         <div className="max-w-7xl mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div>
-              <h3 className="text-xl font-bold mb-2">Subscribe to Job Alerts</h3>
-              <p className="text-gray-600">Get the latest jobs delivered to your inbox</p>
+              <h2 className="text-2xl font-bold mb-1">Get a job faster on app</h2>
+              <p className="text-xl mb-2 text-[#4E992E]">Rated on PlayStore<img className="mb-2" src="https://www.jobhai.com/static/home/rate-star-group.svg" alt="" /></p>
             </div>
             <div className="flex gap-2 w-full md:w-auto">
               <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#6A38C2] flex-1 md:w-64"
+                type="Mobile No."
+                placeholder="Enter your Number"
+                className="px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#4E992E] flex-1 md:w-64"
               />
-              <Button className="bg-[#6A38C2] hover:bg-[#5b30a6]">Subscribe</Button>
+              <Button className="bg-[#4E992E] hover:bg-[#4E992E]">+91</Button>
             </div>
           </div>
         </div>
@@ -51,24 +51,22 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <h2 className="text-xl font-bold">Job Hai</h2>
+              <h2 className="text-[#4E992E] text-2xl font-bold">Job Hai</h2>
             </div>
-            <p className="text-gray-600 text-sm leading-relaxed">
-              Connecting talented professionals with their dream careers. Your journey to success starts here.
-            </p>
+           
             <div className="flex space-x-4 pt-2">
               {[
-                { Icon: Facebook, href: 'https://facebook.com', label: 'Facebook' },
-                { Icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+                { Icon: Youtube, href: 'https://facebook.com', label: 'Youtube' },
                 { Icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
+                { Icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
                   href={href}
-                  className="text-gray-600 hover:text-[#6A38C2] transition-colors duration-200"
+                  className="text-gray-600 hover:text-[#4E992E] transition-colors duration-200"
                   aria-label={label}
                 >
-                  <Icon className="h-5 w-5" />
+                  <Icon className="h-8 w-8" />
                 </a>
               ))}
             </div>
@@ -76,13 +74,13 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-2xl text-[#4E992E] font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-600 hover:text-[#6A38C2] transition-colors duration-200"
+                    className="text-gray-600 hover:text-[#4E992E] transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -93,13 +91,13 @@ const Footer = () => {
 
           {/* Job Categories */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Job Categories</h3>
+            <h3 className="text-2xl text-[#4E992E] font-semibold mb-4">Job Categories</h3>
             <ul className="space-y-3">
               {categories.map((category) => (
                 <li key={category.name}>
                   <a
                     href={category.href}
-                    className="text-gray-600 hover:text-[#6A38C2] transition-colors duration-200"
+                    className="text-gray-600 hover:text-[#4E992E] transition-colors duration-200"
                   >
                     {category.name}
                   </a>
@@ -110,7 +108,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-2xl text-[#4E992E] font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-3">
               {contact.map(({ icon: Icon, text }) => (
                 <li key={text} className="flex items-center gap-2 text-gray-600">
@@ -128,13 +126,13 @@ const Footer = () => {
             © {new Date().getFullYear()} Job Quest. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-gray-600 hover:text-[#6A38C2] transition-colors duration-200">
+            <a href="#" className="text-gray-600 hover:text-[#4E992E] transition-colors duration-200">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-600 hover:text-[#6A38C2] transition-colors duration-200">
+            <a href="#" className="text-gray-600 hover:text-[#4E992E] transition-colors duration-200">
               Terms of Service
             </a>
-            <a href="#" className="text-gray-600 hover:text-[#6A38C2] transition-colors duration-200">
+            <a href="#" className="text-gray-600 hover:text-[#4E992E] transition-colors duration-200">
               Cookie Policy
             </a>
           </div>

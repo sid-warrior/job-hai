@@ -80,7 +80,7 @@ const Profile = () => {
                 user?.profile?.skills.map((item, index) => (
                   <Badge 
                     key={index}
-                    className="px-3 py-1 bg-purple-50 text-[#6A38C2] hover:bg-purple-100 text-sm"
+                    className="px-3 py-1 bg-green-50 text-[#6A38C2] hover:bg-green-100 text-sm"
                   >
                     {item}
                   </Badge>

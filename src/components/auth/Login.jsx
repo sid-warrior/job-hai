@@ -139,7 +139,7 @@ const Login = () => {
             ) : (
               <Button 
                 type="submit" 
-                className="w-full mt-8 h-11 bg-[#6A38C2] hover:bg-[#5b30a6] text-white font-medium rounded-lg transition-colors duration-200"
+                className="w-full mt-8 h-11 bg-[#4E992E] hover:bg-[#91D47B] text-white font-medium rounded-lg transition-colors duration-200"
               >
                 Sign in
               </Button>
@@ -148,7 +148,7 @@ const Login = () => {
 
           <p className="text-center text-gray-600 mt-6">
             Don't have an account?{" "}
-            <Link to="/signup" className="text-blue-600 hover:text-blue-700 font-medium">
+            <Link to="/signup" className="text-green-600 hover:text-green-700 font-medium">
               Sign up
             </Link>
           </p>
